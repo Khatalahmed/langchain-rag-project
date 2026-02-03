@@ -69,16 +69,38 @@ python pdf_ai.py
 
 ## 📁 Project Structure
 
+## 🏗️ Architecture
+
+```text
 langchain-rag-project/
-├── 📁 data/                  # Sample documents
-│   ├── large_text.pdf        # Test PDF
-│   └── story.txt             # Sample text
-├── 📁 docs/                  # Additional documents
-├── 📁 outputs/               # Generated outputs
-├── main.py                   # Entry point
-├── pdf_ai.py                 # RAG pipeline
-├── requirements.txt          # Dependencies
-└── README.md                 # You are here!
+│
+├── 📁 data/
+│   ├── large_text.pdf
+│   └── story.txt
+│
+├── 📁 docs/
+│
+├── 📁 outputs/
+│
+├── main.py                   # LLM connection test
+├── chain.py                  # Prompt chaining
+├── cook_pipeline.py          # LCEL pipeline demo
+├── pdf_ai.py                 # 🔥 Complete RAG pipeline
+│
+├── load_pdf.py               # PDF loader
+├── load_pdf_ocr.py           # OCR-based PDF
+├── load_story.py             # Text file loader
+├── load_web.py               # Web scraper
+│
+├── memory_chat.py            # Conversation memory
+├── prompt_router.py          # Intent routing
+├── router_with_memory.py     # Router + memory
+├── router_memory_confidence.py # Confidence scoring
+├── structured_output.py      # JSON output
+│
+├── requirements.txt
+└── README.md
+`` `
 
 ---
 
